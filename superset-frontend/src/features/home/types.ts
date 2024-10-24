@@ -54,5 +54,5 @@ export enum GlobalMenuDataOptions {
   CSVUpload = 'csvUpload',
   ExcelUpload = 'excelUpload',
   ColumnarUpload = 'columnarUpload',
-  DbConnectors = 'dbConnectors'
+  DbConnectors = 'dbConnectors',
 }

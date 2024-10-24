@@ -50,7 +50,6 @@ const StyledHeader = styled.div`
     right: 0;
     ul.ant-menu-root {
       padding: 0px;
-      background-color: black;
     }
     li[role='menuitem'] {
       border: 0;

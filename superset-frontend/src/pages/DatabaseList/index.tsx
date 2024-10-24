@@ -246,7 +246,6 @@ function DatabaseList({
             setCsvUploadDataModalOpen(true);
           },
           perm: canUploadCSV && showUploads,
-          
         },
         {
           label: t('Upload Excel'),
@@ -256,7 +255,6 @@ function DatabaseList({
             setExcelUploadDataModalOpen(true);
           },
           perm: canUploadExcel && showUploads,
-          
         },
         {
           label: t('Upload Columnar'),

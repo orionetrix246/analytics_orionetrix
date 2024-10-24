@@ -295,7 +295,7 @@ const RightMenu = ({
   const handleMenuSelection = (itemChose: any) => {
     if (itemChose.key === GlobalMenuDataOptions.DbConnection) {
       setShowDatabaseModal(true);
-    } else if (itemChose.key === GlobalMenuDataOptions.DbConnectors){
+    } else if (itemChose.key === GlobalMenuDataOptions.DbConnectors) {
       setShowDatabaseModal(true);
     } else if (itemChose.key === GlobalMenuDataOptions.GoogleSheets) {
       setShowDatabaseModal(true);
@@ -532,7 +532,6 @@ const RightMenu = ({
             <Menu.Divider key="version-info-divider" />,
             <Menu.ItemGroup key="about-section" title={t('About')}>
               <div className="about-section">
-                
                 {navbarRight.version_string && (
                   <div css={versionInfoStyles}>
                     {t('Version')}: {navbarRight.version_string}

@@ -36,16 +36,6 @@ import {
 } from 'src/types/bootstrapTypes';
 import RightMenu from './RightMenu';
 
-
-
-
-const NavIcons = [
-  Icons.NavDashboard,
-  Icons.NavCharts,
-  Icons.DatasetPhysical
-]
-
-
 interface MenuProps {
   data: MenuData;
   isFrontendRoute?: (path?: string) => boolean;
@@ -156,7 +146,6 @@ const globalStyles = (theme: SupersetTheme) => css`
   }
   .ant-menu-submenu.ant-menu-submenu-popup.ant-menu.ant-menu-light {
     border-radius: 0px;
-    background-color: black;
   }
   .ant-menu-vertical > .ant-menu-submenu.data-menu > .ant-menu-submenu-title {
     height: 28px;
@@ -251,7 +240,6 @@ export function Menu({
   if (standalone || uiConfig.hideNav) return <></>;
 
   const renderSubMenu = ({
-    Icon,
     label,
     childs,
     url,
@@ -262,7 +250,6 @@ export function Menu({
       return (
         <DropdownMenu.Item key={label} role="presentation">
           <NavLink role="button" to={url} activeClassName="is-active">
-            <Icon/>
             {label}
           </NavLink>
         </DropdownMenu.Item>
@@ -346,7 +333,6 @@ export function Menu({
             {menu.map((item, index) => {
               const props = {
                 index,
-                Icon: NavIcons[index],
                 ...item,
                 isFrontendRoute: isFrontendRoute(item.url),
                 childs: item.childs?.map(c => {
